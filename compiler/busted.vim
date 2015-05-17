@@ -13,5 +13,11 @@ if exists(":CompilerSet") != 2		" older Vim always used :setlocal
 endif
 
 CompilerSet makeprg=busted
-CompilerSet efm=%f:%l:\ %m
+
+CompilerSet efm=%.%#\ ->\ %f:%l:\ %m
+CompilerSet efm+=%.%#\ ->\ %f:%l:\ %m
+
+CompilerSet efm+=%A%.%#\ ->\ %f\ @\ %l%.%#
+CompilerSet efm+=%Z%.%#:%m
+CompilerSet efm+=%-C%.%#
 
