@@ -17,7 +17,7 @@ CompilerSet makeprg=busted
 CompilerSet efm=%.%#\ ->\ %f:%l:\ %m
 CompilerSet efm+=%.%#\ ->\ %f:%l:\ %m
 
-CompilerSet efm+=%A%.%#\ ->\ %f\ @\ %l%.%#
-CompilerSet efm+=%Z%.%#:%m
+CompilerSet efm+=%A%.%#\ ->\ %.%#\ @\ %.%#
+CompilerSet efm+=%Z%f:%l:\ %m
 CompilerSet efm+=%-C%.%#
 
